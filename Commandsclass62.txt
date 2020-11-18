@@ -1,0 +1,129 @@
+Step1:
+
+Install nodejs from "nodejs.org/en/"
+
+Step-2
+Download 14.15.0 LTS
+
+Step-3
+Install the downloaded file
+
+Step-4
+open cmd prompt(from anydrive/anyfolder)
+>node --version
+
+Step-5
+>npm --version
+
+Step-6
+>npm install expo-cli --global
+
+Step-7
+Open QuizBuzzer-61(Rename it to BuzzerApp)
+Save it and download as zip
+
+Step-8
+Cut the zip  and paste it in (Ex: C:class62)
+Extract it .
+open it in Visual Code Studio
+
+Step-9
+Open package.json
+In  dependancies change the version for firebase
+
+"firebase":"^7.9"
+
+Step-10
+
+Go to cmd prompt
+class62>cd BuzzerApp
+class62/BuzzerApp>cd BuzzerApp
+class62/BuzzerApp/BuzzerApp>npm install
+
+[Here npm will look for package.json file and will install all the dependecies]
+
+Step-11
+
+[If error comes]
+>npm install react-native-vector-icons
+
+>npm install react-native-gesture-handler
+
+Step-12
+>expo start(This command will show you the app in your local browser)
+
+Step-13
+
+Open the code in Visual Code and do changes in "app.json" file
+
+"android":{
+"package":"com.testuser.BuzzerApp"
+},
+
+"ios":{
+
+"supportsTablet":true,
+"bundleIdentifier":"com.testuser.quizbuzzer"
+
+}
+
+Step-14(To generate apk file)
+go to cmd prompt
+>ctrl+c
+>expo build:android
+or
+>expo build:ios
+
+Step-15
+
+apk 
+
+signin with email and password
+
+generate new keystore
+
+Step-15
+You need to wait..
+Build will take time
+You can check the status in the given path shown in cmd prompt
+path(ex: snack profile/accounts/build/....)
+apk file will get generated there only.
+
+Step-16
+after apk file gets generated ,download it to your local computer
+transfer it to mobile and install the apk file in mobile
+
+Now you will find the quizbuzzer as an app in your phone.
+------------------------------------------------------------------
+Weatherapi app
+
+Change the latitude and longitude to your current location(Find from google)
+
+change the number in the weather api url "lat" and "lang"
+
+open another cmd prompt
+go to c drive (ex:)
+
+>expo init weatherapi
+
+choose blank template
+
+
+>cd weatherapi (as the previous command will create a folder)
+
+
+Now open weatherapi in Visual Code Studio
+and click on App.js 
+delete the code of App.js
+
+Copy the code of App.js(from the snack link) and past it in Visual code
+save it
+>npm start
+
+[You can see the output of weatherapp in browser]
+
+
+
+
+
+
